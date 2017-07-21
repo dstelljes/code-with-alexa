@@ -9,9 +9,9 @@ define function Fibonacci number
       integer 1
     throw argument error
     call if
-      call equals
+      call less than or equal to
         n
-        integer 1
+        integer 2
       integer 1
       call sum
         call Fibonacci number
