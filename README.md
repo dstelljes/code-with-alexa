@@ -110,35 +110,16 @@ call merge sort
 ### Brainfuck interpreter
 
 ```
-define function decrement
-  take value
-  call if
-    call is null
-      value
-    integer 0
-    call difference
-      value
-      integer 1
-
-define function increment
-  take value
-  call if
-    call is null
-      value
-    integer 0
-    call sum
-      value
-      integer 1
-
 define function read 
   take context
-  call get
+  call get or default
     call get
       context
       symbol data
     call get
       context
       symbol data pointer
+    integer 0
 
 define function write
   take context
@@ -238,8 +219,9 @@ define function execute
                 call get
                   context
                   symbol data pointer
+          end map
 
-define function parse 
+define function parse
   take instructions
   take code
   take stack
@@ -282,9 +264,10 @@ define function parse
           call pop
             instructions
           empty list
-          call unshift
+          call push
             code
             stack
+      end map
 
 define function brainfuck
   take program
@@ -297,7 +280,7 @@ define function brainfuck
           call parse
             program
             empty list
-            empty list
+            empty stack
           start map
             symbol data
             empty map
@@ -308,6 +291,7 @@ define function brainfuck
                 coerce to integer
                 input
             symbol output
+          end map
         symbol output
 
 define hello world
