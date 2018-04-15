@@ -1,0 +1,31 @@
+{
+  "name": "code-with-alexa",
+  "version": "0.0.1",
+  "author": "Dan Stelljes <dan@stellj.es>",
+  "license": "MIT",
+  "repository": "git@github.com:dstelljes/code-with-alexa.git",
+  "dependencies": {
+    "big-integer": "1.6.28",
+    "immutable": "4.0.0-rc.9"
+  },
+  "devDependencies": {
+    "ava": "0.25.0",
+    "jsdoc": "3.5.5",
+    "standard": "11.0.1"
+  },
+  "scripts": {
+    "documentation": "jsdoc -c jsdoc.json",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "ava",
+    "test:watch": "ava --watch"
+  },
+  "ava": {
+    "files": [
+      "language/**/*.test.js"
+    ],
+    "source": [
+      "language/**/*.js"
+    ]
+  }
+}

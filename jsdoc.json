@@ -1,0 +1,11 @@
+{
+  "opts": {
+    "destination": "documentation",
+    "recurse": true
+  },
+  "source": {
+    "include": [
+      "language"
+    ]
+  }
+}
