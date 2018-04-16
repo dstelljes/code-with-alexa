@@ -12,15 +12,15 @@ const _value = Symbol('String value')
  * @classdesc
  * A String represents text.
  *
- * @memberof language.types
+ * @memberof module:language/types
  *
  * @param {*} value
  * The value of the String represented as a string.
  *
  * @throws {external:TypeError}
- * If the value is not a string or a {@link language.types.String|String}.
+ * If the value is not a string or a {@link module:language/types.String|String}.
  *
- * @returns {language.types.String}
+ * @returns {module:language/types.String}
  */
 function String (value) {
   if (String.isString(value)) {

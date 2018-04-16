@@ -12,7 +12,7 @@ const _value = Symbol('Character value')
  * @classdesc
  * A Character represents a single UTF-8 character.
  *
- * @memberof language.types
+ * @memberof module:language/types
  *
  * @param {*} value
  * The value of the Character represented as a one-character string or a code
@@ -25,9 +25,9 @@ const _value = Symbol('Character value')
  * If the value is a string longer or shorter than a single character.
  *
  * @throws {external:TypeError}
- * If the value is not a number, a string, or a {@link language.types.Character|Character}.
+ * If the value is not a number, a string, or a {@link module:language/types.Character|Character}.
  *
- * @returns {language.types.Character}
+ * @returns {module:language/types.Character}
  */
 function Character (value) {
   if (Character.isCharacter(value)) {

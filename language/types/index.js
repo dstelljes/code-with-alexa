@@ -1,12 +1,14 @@
 'use strict'
 
 /**
- * @alias TypeError
- * @external TypeError
- * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError
+ * @module language/types
  */
-
-/**
- * @memberof language
- * @namespace types
- */
+module.exports = {
+  Character: require('./character'),
+  Integer: require('./integer'),
+  List: require('./list'),
+  Map: require('./map'),
+  Set: require('./set'),
+  Stack: require('./stack'),
+  String: require('./string')
+}

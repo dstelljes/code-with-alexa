@@ -73,3 +73,28 @@ test('does not equate non-Integers', t => {
 test('implements ValueObject', t => {
   t.true(isValueObject(Integer(0)))
 })
+
+test('computes absolute value', t => {
+  t.true(Integer(10).absoluteValue().equals(Integer(10)))
+  t.true(Integer(0).absoluteValue().equals(Integer(0)))
+  t.true(Integer(-10).absoluteValue().equals(Integer(10)))
+})
+
+test('adds', t => {
+  t.true(Integer(2).add(Integer(-2)).equals(Integer(0)))
+})
+
+test('mods', t => {
+  t.true(Integer(5).modulo(Integer(3)).equals(Integer(2)))
+  t.true(Integer(6).modulo(Integer(3)).equals(Integer(0)))
+  t.true(Integer(-5).modulo(Integer(3)).equals(Integer(-2)))
+  t.true(Integer(5).modulo(Integer(-3)).equals(Integer(2)))
+})
+
+test('multiplies', t => {
+  t.true(Integer(2).multiply(Integer(-2)).equals(Integer(-4)))
+})
+
+test('subtracts', t => {
+  t.true(Integer(2).subtract(Integer(-2)).equals(Integer(4)))
+})

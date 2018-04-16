@@ -5,7 +5,7 @@
  * from the front.
  *
  * @external Stack
- * @memberof language.types
+ * @memberof module:language/types
  * @see https://facebook.github.io/immutable-js/docs/#/Stack
  */
 module.exports = require('immutable').Stack
