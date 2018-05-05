@@ -3,13 +3,16 @@
 const Integer = require('../types/integer')
 
 /**
+ * Provides basic arithmetic functions.
  * @module language/library/math
  */
 
 /**
  * Returns the absolute value of the argument.
  *
- * @alias module:language/library/math.'absolute value'
+ * @alias 'absolute value'
+ * @memberof module:language/library/math
+ * @static
  *
  * @param {module:language/types.Integer} n
  *
@@ -29,7 +32,9 @@ module.exports['absolute value'] = function (n) {
 /**
  * Returns the sum of the first and second arguments.
  *
- * @alias module:language/library/math.'add'
+ * @alias 'add'
+ * @memberof module:language/library/math
+ * @static
  *
  * @param {module:language/types.Integer} a
  * @param {module:language/types.Integer} b
@@ -50,7 +55,9 @@ module.exports['add'] = function (a, b) {
 /**
  * Returns the first argument modulo the second argument.
  *
- * @alias module:language/library/math.'modulo'
+ * @alias 'modulo'
+ * @memberof module:language/library/math
+ * @static
  *
  * @param {module:language/types.Integer} a
  * @param {module:language/types.Integer} b
@@ -71,7 +78,9 @@ module.exports['modulo'] = function (a, b) {
 /**
  * Returns the product of the first and second arguments.
  *
- * @alias module:language/library/math.'multiply'
+ * @alias 'multiply'
+ * @memberof module:language/library/math
+ * @static
  *
  * @param {module:language/types.Integer} a
  * @param {module:language/types.Integer} b
@@ -92,7 +101,9 @@ module.exports['multiply'] = function (a, b) {
 /**
  * Returns the difference of the first and second arguments.
  *
- * @alias module:language/library/math.'subtract'
+ * @alias 'subtract'
+ * @memberof module:language/library/math
+ * @static
  *
  * @param {module:language/types.Integer} a
  * @param {module:language/types.Integer} b
