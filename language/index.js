@@ -6,6 +6,7 @@
  */
 
 module.exports = {
+  evaluation: require('./evaluation'),
   library: require('./library'),
   types: require('./types')
 }
